@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sun">
+   
+    </div>
+    <div class="moon">
+     
+    </div>
+    <div class="change-mood">
+        <div class="toggleWrapper">
+            <input type="checkbox" id="dn" >
+            <label for="dn" class="toggle">
+                <span class="toggle__handler">
+                    <span class="crater crater--1"></span>
+                    <span class="crater crater--2"></span>
+                    <span class="crater crater--3"></span>
+                </span>
+                <span class="star star--1"></span>
+                <span class="star star--2"></span>
+                <span class="star star--3"></span>
+                <span class="star star--4"></span>
+                <span class="star star--5"></span>
+                <span class="star star--6"></span>
+            </label>
+        </div>
+    </div>
+    <div id="clock-box">
+
+    <div id="digital-clock">
+
+    </div>
+    <div class="clock">
+        <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+
+    </div>
+    </div>
+    
+
+    <div class="change-clock">
+        <form action="">
+
+            <input type="radio" name="clock" value="digital-clock" id="radio-clock" checked onclick="changeClock()" >
+            <label for="radio-clock">Clock</label>
+
+            <input type="radio" name="clock" value="clock" id="radio-digital-clock"  onclick="changeDigitalClock()" > 
+            <label for="radio-digital-clock">Digital Clock</label>
+
+        </form>
+    </div>
+
+    <script src="JS.js"></script>
+</body>
+</html>
